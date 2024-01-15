@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="display-4">Membres de la famille Faure</h2>
+  <div class="row">
+    <div class="col" *ngFor="let person of familyData">
+      <p class="lastname">{{ person.firstname }} {{ person.name }}</p>
+      <img class="img-family" src="{{ person.picture }}" alt="" />
+      <p>{{ person.activity }}</p>
+    </div>
+  </div>
+</div>
+<h3 class="display-5">Cette famille a compte un nouvel arrivant</h3>
+<div class="col">
+  <p class="lastname">Lucien</p>
+  <img class="img-family" src="../../assets/lucien.JPG" alt="" />
+  <p>qui a bien besoin de se balader</p>
+</div>
+<h3 class="display-6">
+  Ce site est conçu pour se répartir<br />
+  les sorties du Lulu grâce à un tableau
+</h3>
+
+<!-- apply test -->
