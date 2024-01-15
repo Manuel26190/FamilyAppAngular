@@ -1,0 +1,29 @@
+<section>
+  <div class="day-div">
+    <p class="display-6">Lundi</p>
+    <select name="" id="">
+      <option value="">Matin</option>
+      <option *ngFor="let person of familyData" value="">
+        {{ person.firstname }}
+      </option>
+    </select>
+    <select name="" id="">
+      <option value="">Midi</option>
+      <option *ngFor="let person of familyData" value="">
+        {{ person.firstname }}
+      </option>
+    </select>
+    <select name="" id="">
+      <option value="">Soir</option>
+      <option *ngFor="let person of familyData" value="">
+        {{ person.firstname }}
+      </option>
+    </select>
+  </div>
+  <div class="day-div">Mardi</div>
+  <div class="day-div">Mercredi</div>
+  <div class="day-div">Jeudi</div>
+  <div class="day-div">Vendredi</div>
+  <div class="day-div">Samedi</div>
+  <div class="day-div">Dimanche</div>
+</section>
