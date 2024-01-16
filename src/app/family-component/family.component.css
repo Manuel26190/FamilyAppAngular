@@ -36,15 +36,29 @@ h3 {
   text-align: center;
   padding: 1.2em 0 0.8em 0;
 }
-h4 {
-  color: white;
-  margin-top: 1.2em;
-  text-shadow: 1px 2px 2px black;
-  text-align: center;
-  padding: 1.2em 0;
+.img-title-div {
+  position: relative;
+  height: 9em;
+  margin-top: 2em;
+}
+.img-forest {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url("../../assets/forest.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  text-shadow: 2px 20px 40px white;
+  height: 12em;
+  background-color: aqua;
+  opacity: 0.8;
+}
+h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  margin-top: 1.1em;
+  text-shadow: 2px 2px 5px rgb(0 0 0);
+  text-align: center;
 }
