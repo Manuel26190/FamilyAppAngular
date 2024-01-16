@@ -1,41 +1,61 @@
+<!-- Partie HTML -->
 <section class="section-card">
   <div class="day-div" *ngFor="let day of weekDayData">
-    <p class="display-6 day-text" style="color: {{ day.color }}">
+    <p class="display-6 day-text" style="color: #8b4513">
       {{ day.day }}
     </p>
-    <select name="" id="">
+    <select [(ngModel)]="day.selectedPersonMatin" name="" id="">
       <option value="">Matin</option>
       <option *ngFor="let person of familyData" [value]="person.firstname">
-        <img
-          src="{{ person.picture }}"
-          alt="{{ person.firstname }}"
-          class="person-image"
-        />
         {{ person.firstname }}
       </option>
     </select>
-    <select name="" id="">
+    <select [(ngModel)]="day.selectedPersonMidi" name="" id="">
       <option value="">Midi</option>
       <option *ngFor="let person of familyData" [value]="person.firstname">
-        <img
-          src="{{ person.picture }}"
-          alt="{{ person.firstname }}"
-          class="person-image"
-        />
-      </option>
-    </select>
-    <select name="" id="">
-      <option value="">Soir</option>
-      <option *ngFor="let person of familyData" [value]="person.firstname">
-        <img
-          src="{{ person.picture }}"
-          alt="{{ person.firstname }}"
-          class="person-image"
-        />
         {{ person.firstname }}
       </option>
     </select>
+    <select [(ngModel)]="day.selectedPersonSoir" name="" id="">
+      <option value="">Soir</option>
+      <option *ngFor="let person of familyData" [value]="person.firstname">
+        {{ person.firstname }}
+      </option>
+    </select>
+  </div>
+</section>
 
-    <!-- Répétez le même modèle pour Midi et Soir -->
+<section class="section-calendar">
+  <div class="day-div" *ngFor="let day of weekDayData">
+    <p class="display-6 day-text" style="color: green">
+      {{ day.day }}
+    </p>
+    <div class="moment-div">
+      <p>Matin</p>
+      <img
+        *ngIf="day.selectedPersonMatin"
+        [src]="getPersonPicture(day.selectedPersonMatin)"
+        alt="{{ day.selectedPersonMatin }}"
+        class="person-img"
+      />
+    </div>
+    <div class="moment-div">
+      <p>Midi</p>
+      <img
+        *ngIf="day.selectedPersonMidi"
+        [src]="getPersonPicture(day.selectedPersonMidi)"
+        alt="{{ day.selectedPersonMidi }}"
+        class="person-img"
+      />
+    </div>
+    <div class="moment-div">
+      <p>Soir</p>
+      <img
+        *ngIf="day.selectedPersonSoir"
+        [src]="getPersonPicture(day.selectedPersonSoir)"
+        alt="{{ day.selectedPersonSoir }}"
+        class="person-img"
+      />
+    </div>
   </div>
 </section>
