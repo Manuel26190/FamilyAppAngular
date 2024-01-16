@@ -9,8 +9,7 @@ import { familyData } from '../data.family';
 })
 export class LuluArrayComponent {
   familyData: FamilySchema[] = familyData;
-
   constructor() {
-    console.log(familyData);
+    //console.log(familyData);
   }
 }

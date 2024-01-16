@@ -1,0 +1,41 @@
+<section class="section-card">
+  <div class="day-div" *ngFor="let day of weekDayData">
+    <p class="display-6 day-text" style="color: {{ day.color }}">
+      {{ day.day }}
+    </p>
+    <select name="" id="">
+      <option value="">Matin</option>
+      <option *ngFor="let person of familyData" [value]="person.firstname">
+        <img
+          src="{{ person.picture }}"
+          alt="{{ person.firstname }}"
+          class="person-image"
+        />
+        {{ person.firstname }}
+      </option>
+    </select>
+    <select name="" id="">
+      <option value="">Midi</option>
+      <option *ngFor="let person of familyData" [value]="person.firstname">
+        <img
+          src="{{ person.picture }}"
+          alt="{{ person.firstname }}"
+          class="person-image"
+        />
+      </option>
+    </select>
+    <select name="" id="">
+      <option value="">Soir</option>
+      <option *ngFor="let person of familyData" [value]="person.firstname">
+        <img
+          src="{{ person.picture }}"
+          alt="{{ person.firstname }}"
+          class="person-image"
+        />
+        {{ person.firstname }}
+      </option>
+    </select>
+
+    <!-- Répétez le même modèle pour Midi et Soir -->
+  </div>
+</section>

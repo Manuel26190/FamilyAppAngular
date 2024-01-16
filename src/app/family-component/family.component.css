@@ -42,11 +42,9 @@ h4 {
   text-shadow: 1px 2px 2px black;
   text-align: center;
   padding: 1.2em 0;
-  background-image: url("https://www.shutterstock.com/image-photo/very-wide-panoramic-photo-forest-260nw-1202179588.jpg");
+  background-image: url("../../assets/forest.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* Couleur d'arrière-plan avec opacité */
+  text-shadow: 2px 20px 40px white;
 }
-
-/* Autres styles pour votre texte si nécessaire */

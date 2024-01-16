@@ -1,0 +1,40 @@
+/* #006400
+#008000
+#8b4513
+#708090
+#228b22
+#8fbc8f */
+.section-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+.day-div {
+  border-radius: 2em;
+  border: 1px solid black;
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+}
+
+.person-img {
+  width: 2em;
+}
+
+@media (max-width: 1300px) {
+  .section-card {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 468px) {
+  .section-card {
+    flex-direction: column;
+  }
+}

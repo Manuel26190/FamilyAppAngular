@@ -3,7 +3,7 @@ import { FamilySchema } from './Family.Schema';
 export const familyData: FamilySchema[] = [
   {
     id: 1,
-    firstname: 'Manuel',
+    firstname: 'Manu',
     name: 'Faure',
     activity: 'Open to work',
     picture:

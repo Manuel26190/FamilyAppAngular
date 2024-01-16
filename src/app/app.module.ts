@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FamilyComponent } from './family/family.component';
-import { LuluArrayComponent } from './lulu-array/lulu-array.component';
+import { FamilyComponent } from './family-component/family.component';
+import { LuluArrayComponent } from './lulu-array-component/lulu-array.component';
+import { WeekCardComponent } from './week-card-component/week-card.component';
 @NgModule({
-  declarations: [AppComponent, FamilyComponent, LuluArrayComponent],
+  declarations: [
+    AppComponent,
+    FamilyComponent,
+    LuluArrayComponent,
+    WeekCardComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
