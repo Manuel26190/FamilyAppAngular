@@ -4,19 +4,19 @@
     <p class="display-6 day-text" style="color: #8b4513">
       {{ day.day }}
     </p>
-    <select [(ngModel)]="day.selectedPersonMatin" name="" id="">
+    <select [(ngModel)]="day.selectedPersonMatin" name="" id="morning-select">
       <option value="">Matin</option>
       <option *ngFor="let person of familyData" [value]="person.firstname">
         {{ person.firstname }}
       </option>
     </select>
-    <select [(ngModel)]="day.selectedPersonMidi" name="" id="">
+    <select [(ngModel)]="day.selectedPersonMidi" name="" id="half-select">
       <option value="">Midi</option>
       <option *ngFor="let person of familyData" [value]="person.firstname">
         {{ person.firstname }}
       </option>
     </select>
-    <select [(ngModel)]="day.selectedPersonSoir" name="" id="">
+    <select [(ngModel)]="day.selectedPersonSoir" name="" id="evening-select">
       <option value="">Soir</option>
       <option *ngFor="let person of familyData" [value]="person.firstname">
         {{ person.firstname }}
@@ -30,8 +30,8 @@
     <p class="display-6 day-text" style="color: green">
       {{ day.day }}
     </p>
-    <div class="moment-div">
-      <p>Matin</p>
+    <div class="moment-div morning">
+      <p class="morning-text">Matin</p>
       <img
         *ngIf="day.selectedPersonMatin"
         [src]="getPersonPicture(day.selectedPersonMatin)"
@@ -39,8 +39,8 @@
         class="person-img"
       />
     </div>
-    <div class="moment-div">
-      <p>Midi</p>
+    <div class="moment-div half">
+      <p class="half-text">Midi</p>
       <img
         *ngIf="day.selectedPersonMidi"
         [src]="getPersonPicture(day.selectedPersonMidi)"
@@ -48,8 +48,8 @@
         class="person-img"
       />
     </div>
-    <div class="moment-div">
-      <p>Soir</p>
+    <div class="moment-div evening">
+      <p class="evening-text">Soir</p>
       <img
         *ngIf="day.selectedPersonSoir"
         [src]="getPersonPicture(day.selectedPersonSoir)"

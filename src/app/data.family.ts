@@ -13,7 +13,7 @@ export const familyData: FamilySchema[] = [
     id: 2,
     firstname: 'Géraldine',
     name: 'Mourlon',
-    activity: 'worker',
+    activity: 'Worker',
     picture:
       'https://ecoles-rpi-broualan-trans.ac-rennes.fr/sites/ecoles-rpi-broualan-trans.ac-rennes.fr/local/cache-vignettes/L400xH340/amour_leopard-b6080-c4230.jpg?1703699048',
   },
