@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #b19fc4;
+  background: linear-gradient(to right, #ea2087, #8207fa, #ea2087, #8207fa);
+}
+nav {
+  width: 70%;
+  border: 3px double #ea2087;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: #ea2087;
+}
+.nav-div-one {
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: inherit;
+  position: relative;
+  border: 3px double #8207fa;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: #8207fa;
+}
+.nav-div-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 83%;
+  gap: 0.5em;
+  padding: 1.1em;
+}
+h1 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: -1.8px;
+  font-weight: 600;
+  background: linear-gradient(to right, #8207fa, #ea2087);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.angular-logo {
+  max-width: 9.2rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    display: none;
+  }
+}

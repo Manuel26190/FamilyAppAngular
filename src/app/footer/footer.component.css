@@ -1,0 +1,9 @@
+footer {
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+}
