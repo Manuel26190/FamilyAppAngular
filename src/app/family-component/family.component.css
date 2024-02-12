@@ -28,11 +28,11 @@ p {
   font-size: 1.4em;
   font-weight: 400;
 }
-h2 {
+h1 {
   text-align: center;
   padding: 1.5em;
 }
-h3 {
+h2 {
   text-align: center;
   padding: 1.2em 0 0.8em 0;
 }
@@ -53,7 +53,7 @@ h3 {
   background-color: aqua;
   opacity: 0.8;
 }
-h4 {
+h3 {
   position: absolute;
   top: 0;
   left: 0;
