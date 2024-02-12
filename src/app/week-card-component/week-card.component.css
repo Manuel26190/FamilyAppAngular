@@ -63,16 +63,27 @@
   color: white;
   text-shadow: 1px 1px 2px black;
 }
+#morning-select:hover {
+  background: #89d416;
+}
 #half-select {
   background: #6d5549;
   color: white;
   text-shadow: 1px 1px 2px black;
+}
+#half-select:hover {
+  background: #e66e31;
 }
 #evening-select {
   background: #a0b942;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
+#evening-select:hover {
+  background: #d7d217;
+  text-shadow: 1px 1px 1px black;
+}
+
 .morning {
   background: #ffdab9;
 }
